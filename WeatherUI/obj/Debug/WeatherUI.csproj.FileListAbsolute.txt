@@ -14,3 +14,8 @@ C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\
 C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.csproj.CoreCompileInputs.cache
 C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.exe
 C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.pdb
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\ClassLibrary.dll
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\ClassLibrary.pdb
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.csproj.CopyComplete

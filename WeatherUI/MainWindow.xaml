@@ -10,7 +10,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50px"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="75px"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
@@ -33,6 +33,9 @@
         <Button Name="btn_Find" Grid.Row="1" Grid.Column="2" Content="Find" 
                 Width="50px" Height="25px" Margin="10px" VerticalAlignment="Top" 
                 HorizontalAlignment="Left" FontSize="18" Click="btn_Find_Click"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Name="txtShow"
+                   HorizontalAlignment="Center" FontSize="18"/>
 
     </Grid>
 </Window>

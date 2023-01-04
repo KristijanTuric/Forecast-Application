@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,10 @@ namespace WeatherUI
             InitializeComponent();
         }
 
-        private void btn_Find_Click(object sender, RoutedEventArgs e)
+        private async void btn_Find_Click(object sender, RoutedEventArgs e)
         {
-
+            await WeatherAPI.GetWeather(inputLocation.Text);
+            txtShow.Text = WeatherAPI.final;
         }
     }
 }

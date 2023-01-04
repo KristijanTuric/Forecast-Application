@@ -1,0 +1,9 @@
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\obj\Debug\ClassLibrary.csproj.CopyComplete
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\ClassLibrary\obj\Debug\ClassLibrary.pdb

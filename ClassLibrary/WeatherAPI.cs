@@ -11,7 +11,8 @@ namespace ClassLibrary
 {
     public class WeatherAPI
     {
-        public static string final;
+        public static string cityName, cityTemperature, cityAir, cityWind, 
+            cityDescription;
         public static async Task GetWeather(string city)
         {
             var http = new HttpClient();
@@ -22,18 +23,19 @@ namespace ClassLibrary
             WeatherStruct weatherStruct = JsonConvert.DeserializeObject
                 <WeatherStruct>(result);
 
-            
-            final = $"City: {weatherStruct.name}" +
-                $"\nTemperature: {weatherStruct.main["temp"]}°C" +
+            cityName = $"{weatherStruct.name}" +
+                $" - {Math.Round(weatherStruct.main["temp"])}°C";
+            cityTemperature = $"\nTemperature: {weatherStruct.main["temp"]}°C" +
                 $"\nFeels like: {weatherStruct.main["feels_like"]}°C" +
                 $"\nMin Temperture: {weatherStruct.main["temp_min"]}°C" +
-                $"\nMax Temperature: {weatherStruct.main["temp_max"]}°C" +
-                $"\nPressure: {weatherStruct.main["pressure"]}hPa" +
-                $"\nHumidity: {weatherStruct.main["humidity"]}%" +
-                $"\nWind speed: {weatherStruct.wind["speed"]}m/s" +
-                $"\nWind degree direction: {weatherStruct.wind["deg"]}°" +
-                $"\nDescription: {weatherStruct.weather.Rows[0]["main"]} - " +
-                $"{weatherStruct.weather.Rows[0]["description"]}";
+                $"\nMax Temperature: {weatherStruct.main["temp_max"]}°C";
+            cityAir = $"\nPressure: {weatherStruct.main["pressure"]}hPa" +
+                $"\nHumidity: {weatherStruct.main["humidity"]}%";
+            cityWind = $"\nWind speed: {weatherStruct.wind["speed"]}m/s" +
+                $"\nWind degree direction: {weatherStruct.wind["deg"]}°";
+            cityDescription = $"\nDescription: " +
+                $"{weatherStruct.weather.Rows[0]["main"]}" +
+                $" - {weatherStruct.weather.Rows[0]["description"]}";
 
             return;
         }

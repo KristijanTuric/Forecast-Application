@@ -12,6 +12,8 @@
             <RowDefinition Height="50px"/>
             <RowDefinition Height="75px"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -34,8 +36,18 @@
                 Width="50px" Height="25px" Margin="10px" VerticalAlignment="Top" 
                 HorizontalAlignment="Left" FontSize="18" Click="btn_Find_Click"/>
 
-        <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Name="txtShow"
-                   HorizontalAlignment="Center" FontSize="18"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" FontSize="20" Name="txtCity"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" FontSize="18" Name="txtTemp"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="2" FontSize="18" Name="txtDescription"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="18" Name="txtWind"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" FontSize="18" Name="txtAir"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
     </Grid>
 </Window>

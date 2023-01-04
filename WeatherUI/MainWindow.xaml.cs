@@ -29,7 +29,11 @@ namespace WeatherUI
         private async void btn_Find_Click(object sender, RoutedEventArgs e)
         {
             await WeatherAPI.GetWeather(inputLocation.Text);
-            txtShow.Text = WeatherAPI.final;
+            txtCity.Text = WeatherAPI.cityName;
+            txtAir.Text = WeatherAPI.cityAir;
+            txtTemp.Text = WeatherAPI.cityTemperature;
+            txtDescription.Text = WeatherAPI.cityDescription;
+            txtWind.Text = WeatherAPI.cityWind;
         }
     }
 }

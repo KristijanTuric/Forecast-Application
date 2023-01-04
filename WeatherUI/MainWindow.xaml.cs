@@ -24,5 +24,10 @@ namespace WeatherUI
         {
             InitializeComponent();
         }
+
+        private void btn_Find_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

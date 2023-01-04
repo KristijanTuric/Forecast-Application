@@ -1,0 +1,16 @@
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\WeatherUI.exe.config
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\WeatherUI.exe
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\WeatherUI.pdb
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.csproj.AssemblyReference.cache
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\MainWindow.g.cs
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\App.g.cs
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI_MarkupCompile.cache
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI_MarkupCompile.lref
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\MainWindow.baml
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.g.resources
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.Properties.Resources.resources
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.csproj.GenerateResource.cache
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.csproj.CoreCompileInputs.cache
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.exe
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.pdb

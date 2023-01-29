@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherUI"
         mc:Ignorable="d"
-        Title="Forecast" Height="450" Width="800"
+        Title="Forecast" Height="450" Width="800" 
+        WindowStartupLocation="CenterScreen" FontFamily="Cambria"
+        
         ResizeMode="CanMinimize">
     <Grid>
         <Grid.RowDefinitions>
@@ -34,7 +36,8 @@
         
         <Button Name="btn_Find" Grid.Row="1" Grid.Column="2" Content="Find" 
                 Width="50px" Height="25px" Margin="10px" VerticalAlignment="Top" 
-                HorizontalAlignment="Left" FontSize="18" Click="btn_Find_Click"/>
+                HorizontalAlignment="Left" FontSize="18" Click="btn_Find_Click"
+                Style="{StaticResource button}"/>
 
         <TextBlock Grid.Row="2" Grid.Column="1" FontSize="20" Name="txtCity"
                    HorizontalAlignment="Center" VerticalAlignment="Center"/>

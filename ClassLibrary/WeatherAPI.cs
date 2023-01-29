@@ -24,7 +24,7 @@ namespace ClassLibrary
                 <WeatherStruct>(result);
 
             cityName = $"{weatherStruct.name}" +
-                $" - {Math.Round(weatherStruct.main["temp"])}°C";
+                $" {Math.Round(weatherStruct.main["temp"])}°C";
             cityTemperature = $"\nTemperature: {weatherStruct.main["temp"]}°C" +
                 $"\nFeels like: {weatherStruct.main["feels_like"]}°C" +
                 $"\nMin Temperture: {weatherStruct.main["temp_min"]}°C" +

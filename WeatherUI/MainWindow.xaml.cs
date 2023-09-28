@@ -1,18 +1,8 @@
 ﻿using ClassLibrary;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WeatherUI
 {
@@ -28,12 +18,27 @@ namespace WeatherUI
 
         private async void btn_Find_Click(object sender, RoutedEventArgs e)
         {
-            await WeatherAPI.GetWeather(inputLocation.Text);
-            txtCity.Text = WeatherAPI.cityName;
-            txtAir.Text = WeatherAPI.cityAir;
-            txtTemp.Text = WeatherAPI.cityTemperature;
-            txtDescription.Text = WeatherAPI.cityDescription;
-            txtWind.Text = WeatherAPI.cityWind;
+            // If we can't find the city or the user doesn't enter anything or enters wrong name
+            // we catch the exception and display the text
+            try
+            {
+                await WeatherAPI.GetWeather(inputLocation.Text);
+                txtCity.Text = WeatherAPI.cityName + "\n" + WeatherAPI.cityDescription;
+                txtAir.Text = WeatherAPI.cityAir;
+                txtWind.Text = WeatherAPI.cityWind;
+
+                BitmapImage bi = new BitmapImage();
+                bi.BeginInit();
+                bi.UriSource = new Uri(@"https://openweathermap.org/img/wn/10d@2x.png", UriKind.Absolute);
+                bi.EndInit();
+
+                ima.Source = bi;
+
+            } catch(Exception)
+            {
+                txtCity.Text = "This city was not found";
+            }
+            
         }
     }
 }

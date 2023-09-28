@@ -20,3 +20,4 @@ C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\
 C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\WeatherUI.csproj.CopyComplete
 C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\App.baml
+C:\Users\Kiki\Desktop\Code\c# projects\Forecast-Application\WeatherUI\obj\Debug\Styles\Buttons.baml

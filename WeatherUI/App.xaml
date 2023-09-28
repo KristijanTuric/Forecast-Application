@@ -3,29 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WeatherUI"
              StartupUri="MainWindow.xaml">
+    
     <Application.Resources>
-        <Style x:Key="button" TargetType="Button">
-            <Setter Property="Background" Value="#FFFFFF" />
-            <Setter Property="Foreground" Value="#1A1A1A" />
-            <Setter Property="BorderThickness" Value="0" />
-            <Setter Property="Width" Value="38" />
-            <Setter Property="Height" Value="38" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="50">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#1A1A1A" />
-                    <Setter Property="Foreground" Value="#FFFFFF" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Buttons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
+    
 </Application>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Http;
+using System.Security.Policy;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -18,6 +19,7 @@ namespace ClassLibrary
             var response = await http.GetAsync(url);
 
             var result = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(result);
 
             WeatherStruct weatherStruct = JsonConvert.DeserializeObject<WeatherStruct>(result);
 
@@ -36,8 +38,43 @@ namespace ClassLibrary
                 $"\nWind degree direction: {weatherStruct.wind["deg"]}°";
 
             cityDescription = $"\n{weatherStruct.weather.Rows[0]["main"]}" +
-                $" - {weatherStruct.weather.Rows[0]["description"]}" 
-                + $"{weatherStruct.weather.Rows[0]["icon"]}";
+                $" - {weatherStruct.weather.Rows[0]["description"]}";
+
+            return;
+        }
+
+        public static async Task GetForecast(string city)
+        {
+            var http = new HttpClient();
+
+            // Get latitude and longitude from city name
+            var geocodeUrl = $"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=1&appid=7c37d5d34768e0d00a57859861326938";
+            var geocodeResponse = await http.GetAsync(geocodeUrl);
+            var geocodeResult = await geocodeResponse.Content.ReadAsStringAsync();
+            
+            // Strip the [] brackets
+            geocodeResult = geocodeResult.Substring(1, geocodeResult.Length - 2);
+
+            // Get lat and lon with the structure
+            GeocodeStructure geocodeStructure = JsonConvert.DeserializeObject<GeocodeStructure>(geocodeResult);
+
+            var url = $"https://api.openweathermap.org/data/2.5/forecast?" +
+                $"lat={geocodeStructure.lat}&lon={geocodeStructure.lon}&units=metric" +
+                $"&appid=7c37d5d34768e0d00a57859861326938";
+
+            var response = await http.GetAsync(url);
+            var result = await response.Content.ReadAsStringAsync();
+
+            // Extract the needed data from the string (JSON)
+            ForecastStructure forecastStructure = JsonConvert.DeserializeObject<ForecastStructure>(result);
+
+            for (int i = 0; i < forecastStructure.list.Count; i++)
+            {
+                Console.WriteLine(forecastStructure.list[i]["main"]["temp"]);
+            }
+            
+                
+            
 
             return;
         }

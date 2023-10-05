@@ -56,15 +56,20 @@
         <Button Name="btn_Find" 
                 Grid.Row="1" 
                 Grid.Column="2" 
-                Content="Find" 
-                Width="50px" 
-                Height="25px"
+                Content="Current"
                 Margin="10px" 
                 VerticalAlignment="Center" 
-                HorizontalAlignment="Left" 
-                FontSize="18" 
+                HorizontalAlignment="Left"
                 IsDefault="True"
                 Click="btn_Find_Click"/>
+
+        <Button Content="Forecast"
+                Grid.Row="1"
+                Grid.Column="2"
+                Margin="30 0 0 0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                />
 
 
         <TextBlock Grid.Row="2"

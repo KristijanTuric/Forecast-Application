@@ -27,12 +27,7 @@ namespace WeatherUI
                 txtAir.Text = WeatherAPI.cityAir;
                 txtWind.Text = WeatherAPI.cityWind;
 
-                BitmapImage bi = new BitmapImage();
-                bi.BeginInit();
-                bi.UriSource = new Uri(@"https://openweathermap.org/img/wn/10d@2x.png", UriKind.Absolute);
-                bi.EndInit();
-
-                ima.Source = bi;
+                await WeatherAPI.GetForecast(inputLocation.Text);
 
             } catch(Exception)
             {

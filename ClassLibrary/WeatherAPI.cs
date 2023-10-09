@@ -9,6 +9,8 @@ namespace ClassLibrary
     public class WeatherAPI
     {
         public static string cityName, cityTemperature, cityAir, cityWind, cityDescription;
+        public static string dayOne;
+        public static string[] otherDays = new string[5];
         public static async Task GetWeather(string city)
         {
             var http = new HttpClient();
@@ -68,9 +70,27 @@ namespace ClassLibrary
             // Extract the needed data from the string (JSON)
             ForecastStructure forecastStructure = JsonConvert.DeserializeObject<ForecastStructure>(result);
 
+            dayOne = "Today\n" + forecastStructure.list[0]["main"]["temp"] + "°C";
+            var j = 0;
+
+            var temporary = DateTime.Now;
             for (int i = 0; i < forecastStructure.list.Count; i++)
             {
-                Console.WriteLine(forecastStructure.list[i]["main"]["temp"]);
+                var test = DateTime.Parse((string)forecastStructure.list[i]["dt_txt"]);
+
+                // Will give us only noon forecasts, we don't want midnight forecast
+                if (test.Hour == 12)
+                {
+                    if (test.Date > temporary.Date)
+                    {
+                        otherDays[j] = test.Date.ToString() + "\n" + forecastStructure.list[i]["main"]["temp"] + "°C";
+                        j++;
+
+                        temporary = temporary.AddDays(1);
+                    }
+                }
+                
+                
             }
             
                 

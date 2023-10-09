@@ -64,15 +64,71 @@
                 Click="btn_Find_Click"/>
 
         <Button Content="Forecast"
+                Name="btn_Forecast"
                 Grid.Row="1"
                 Grid.Column="2"
                 Margin="30 0 0 0"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
+                Click="btn_Forecast_Click"
                 />
 
 
         <TextBlock Grid.Row="2"
+                   Grid.Column="0"
+                   Name="cellOne"
+                   FontSize="15px"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   />
+
+        <TextBlock Grid.Row="2"
+                   Grid.Column="1"                   
+                   Name="cellTwo"              
+                   FontSize="15px"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   />
+
+        <TextBlock Grid.Row="2"
+                   Grid.Column="2"
+                   Name="cellThree"
+                   FontSize="15px"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   />
+
+        <TextBlock Grid.Row="3"
+                   Grid.Column="0"
+                   Name="cellFour"
+                   FontSize="15px"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   />
+
+        <TextBlock Grid.Row="3"
+                   Grid.Column="1"
+                   Name="cellFive"
+                   FontSize="15px"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   />
+
+        <TextBlock Grid.Row="3"
+                   Grid.Column="2"
+                   Name="cellSix"
+                   FontSize="15px"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"
+                   />
+
+        <!--<TextBlock Grid.Row="2"
                    Grid.Column="0"
                    FontSize="18"
                    Name="txtAir"
@@ -93,10 +149,7 @@
                    FontSize="18"
                    Name="txtWind"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Top" />
-
-        <Image x:Name="ima" Grid.Row="3"
-               Grid.Column="1" />
+                   VerticalAlignment="Top" />-->
 
     </Grid>
     
